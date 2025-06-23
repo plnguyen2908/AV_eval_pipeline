@@ -1,11 +1,12 @@
 from datasets import load_dataset
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset, DataLoader
 
 class AVQA_Dataset(Dataset):
     def __init__(self, doc, category = None, sub_category = None, task_id = None):
         self.questions = []
 
         for question in doc:
+            # print(question)
             category_check, sub_category_check, task_id_check = True, True, True
             if category is not None and category != question['category']:
                 category_check = False
@@ -20,8 +21,6 @@ class AVQA_Dataset(Dataset):
         return len(self.questions)
 
     def __getitem__(self, idx):
-        cache_dir = os.getenv("HF_HOME")
-        print(cache_dir)
         return self.questions[idx]
 
 def get_dataset(category = None, sub_category = None, task_id = None):
