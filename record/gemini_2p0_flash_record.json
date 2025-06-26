@@ -1,0 +1,233 @@
+[
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the woman with blonde hair speak?\nA. Yes, she is the key speaker\nB. No, she cries\nC. No, she only appears for a short time\nD. Yes, she mumbles a few words\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. Yes, she mumbles a few words",
+    "llm answer": "D. Yes, she mumbles a few words"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the girl with brown hair in light pink shirt and dotted dress speak?\nA. Yes, she speaks only one word\nB. Yes, she speaks\nC. No, she laughs\nD. No, she does not talk to anyone\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "A",
+    "answer (gt to be compared)": "A. Yes, she speaks only one word",
+    "llm answer": "D. No, she does not talk to anyone"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the girl in green dress say anything?\nA. Yes, she talks to the guy in vampire costume\nB. No, she dances at a bar\nC. Yes, she talks to everyone\nD. No, she dances at a party\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. No, she dances at a party",
+    "llm answer": "D. No, she dances at a party"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the girl in red dress say anything?\nA. No, she does not exist in the video\nB. Yes, she is talking to the man in black suit\nC. Yes, she speaks\nD. No, she is only dancing\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. No, she is only dancing",
+    "llm answer": "C. Yes, she speaks\n"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the man in yellow shirt speak in the video?\nA. Yes, he is introducing his work.\nB. Yes, he has a short conversation with the man in suit\nC. No, he directly walks away when the lady asks him for a favor\nD. No, he just focuses on his work.\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "B",
+    "answer (gt to be compared)": "B. Yes, he has a short conversation with the man in suit",
+    "llm answer": "B. Yes, he has a short conversation with the man in suit"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the thin man with glasses speak?\nA. Yes, he is the presenter\nB. No, he is just sitting and staring at everyone\nC. No, he is laughing\nD. Yes, he is talking to the girl\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "B",
+    "answer (gt to be compared)": "B. No, he is just sitting and staring at everyone",
+    "llm answer": "B. No, he is just sitting and staring at everyone"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the girl speak in the video?\nA. Yes, she speaks a few words\nB. No, the is no girl in the video\nC. Yes, she talks to the old man\nD. No, she does not speak\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. No, she does not speak",
+    "llm answer": "D. No, she does not speak"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the woman in the movie speak?\nA. No, she does not speak to anyone\nB. No, she is doing housework\nC. Yes, she talks to the man\nD. Yes, she is introducing her new product.\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. Yes, she talks to the man",
+    "llm answer": "C. Yes, she talks to the man"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the woman in black uniform speak in the video?\nA. Yes, she answers the questions from the man\nB. No, she is crying all the time.\nC. No, she remains silent all the time\nD. Yes, she asks the old lady questions\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. No, she remains silent all the time",
+    "llm answer": "C. No, she remains silent all the time"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the woman in the military jacket speak in the video?\nA. Yes, she exchanges the information with her teammates\nB. Yes, she answers the phone.\nC. No, she does not speak.\nD. No, she was fighting with the enemy\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. No, she does not speak.",
+    "llm answer": "C. No, she does not speak."
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the woman speak in the video?\nA. Yes, she is making the action plan\nB. Yes, she questions the police officer\nC. No, she remains silence all the time.\nD. No, she walks away in the middle of the meeting\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "B",
+    "answer (gt to be compared)": "B. Yes, she questions the police officer",
+    "llm answer": "B. Yes, she questions the police officer"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the girl in white dress speak?\nA. No, she does not talk to anyone\nB. Yes, she talks to the boy with black hair\nC. Yes, she talks to the man with glasses\nD. No, she laughs\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. Yes, she talks to the man with glasses",
+    "llm answer": "B. Yes, she talks to the boy with black hair"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"Can't you just let him play\"?\nA. The woman with black jacket\nB. The woman with blue dress\nC. The man with white shirt\nD. The woman with grey jacket\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. The woman with grey jacket",
+    "llm answer": "D. The woman with grey jacket"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the man wearing glasses speak in the video?\nA. Yes, he speaks a few words\nB. Yes, he is the interviewer\nC. No, he only laughs\nD. No, he remains quiet all the time.\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. No, he only laughs",
+    "llm answer": "D. No, he remains quiet all the time."
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"Nice to meet you, Mr. Goh\"?\nA. The man in white jacket\nB. The woman in yellow dress\nC. The woman in red dress\nD. The man in blue shirt\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. The woman in red dress",
+    "llm answer": "C. The woman in red dress"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"it was taken by British soldiers in Benin\"?\nA. The man in black suit\nB. The woman in black suit\nC. The woman in blue shirt\nD. The man with blue jacket\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. The man with blue jacket",
+    "llm answer": "D. The man with blue jacket"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"But I'm hoping I've got a voicemail from Paul Krieger\"?\nA. The man with blue shirt\nB. The man with black suit\nC. The woman with blue shirt\nD. The woman with brown shirt\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "A",
+    "answer (gt to be compared)": "A. The man with blue shirt",
+    "llm answer": "A. The man with blue shirt"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"It's an honor to be photographed by you\"?\nA. The man with blue suit\nB. The woman with pink dress\nC. The man with black shirt\nD. The woman with blue jacket\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "A",
+    "answer (gt to be compared)": "A. The man with blue suit",
+    "llm answer": "A. The man with blue suit"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"No you can't. You definitely can't\"?\nA. The woman wearing yellow shirt\nB. The woman wearing white shirt\nC. The man wearing pink shirt\nD. Then man wearing blue shirt\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. The man wearing pink shirt",
+    "llm answer": "C. The man wearing pink shirt"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"I'm proud of you\"?\nA. The man in grey shirt\nB. The woman with black hair\nC. The man with black shirt\nD. The woman with blonde hair\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. The man with black shirt",
+    "llm answer": "C. The man with black shirt"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"I guess she didn't understand we were dating\"?\nA. The man with blue jacket\nB. The girl with blue shirt\nC. The girl with yellow shirt\nD. The boy with white shirt\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. The boy with white shirt",
+    "llm answer": "D. The boy with white shirt"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"Dude, I lost count 20 cards ago\"?\nA. The woman with red sweater\nB. The woman with blue sweater\nC. The man with blue shirt\nD. The man with dark red jacket\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "A",
+    "answer (gt to be compared)": "A. The woman with red sweater",
+    "llm answer": "B. The woman with blue sweater"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"I'm Audrey, Allison's friend\"?\nA. The girl with dotted blue dress\nB. The boy with white shirt\nC. The woman with floral blouse\nD. The man with blue shirt and black tie\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "A",
+    "answer (gt to be compared)": "A. The girl with dotted blue dress",
+    "llm answer": "A. The girl with dotted blue dress"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"How was your conference\"?\nA. The woman with purple shirt\nB. The man with brown jacket\nC. The man with red shirt\nD. The woman with blonde hair\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. The man with red shirt",
+    "llm answer": "C. The man with red shirt"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"I'm glad you and I are friends again, too\"?\nA. The man in black shirt\nB. The man in gray jacket\nC. The woman in blue dress\nD. The woman in purple sweater\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "A",
+    "answer (gt to be compared)": "A. The man in black shirt",
+    "llm answer": "A. The man in black shirt"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"I'm listening to God's Plan by Drake\"?\nA. The man with red shirt and grey jacket\nB. The man with green jacket\nC. The man with black headphone\nD. The woman with white shirt\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. The man with black headphone",
+    "llm answer": "C. The man with black headphone"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the woman with curvy hair and wearing glasses speak?\nA. Yes, she greets the boys and quickly leaves\nB. No, she does not say anything\nC. Yes, she talks to a group of boys\nD. No, she does not appear in the movie\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. Yes, she talks to a group of boys",
+    "llm answer": "The answer is C. Yes, she talks to a group of boys."
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"Do not raise your voice to me sir\"?\nA. The man with grey hair\nB. The woman with black hair\nC. The woman with blond hair\nD. The man with black hair\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. The woman with blond hair",
+    "llm answer": "C. The woman with blond hair"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"Sorry. Didn't mean to scare you\"?\nA. The woman with purple shirt\nB. The boy in black suit\nC. The man with white shirt\nD. The woman with colorful dress\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. The man with white shirt",
+    "llm answer": "C. The man with white shirt"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the man with gray hair in black suit speak?\nA. Yes, he is the interviewer\nB. No, he remains slient\nC. No, he is just looking into the train\nD. Yes, he is explaining things\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. Yes, he is explaining things",
+    "llm answer": "D. Yes, he is explaining things"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"It was an investigation into stock fraud\"?\nA. The man with floral black tie\nB. The man with blue tie\nC. The man with striped black tie\nD. The man with purple tie\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. The man with purple tie",
+    "llm answer": "D. The man with purple tie"
+  },
+  {
+    "task_id": "Speech matching",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nWho said \"I am not king of all people\"?\nA. The man with green coat\nB. The man with armor\nC. The man with purple coat\nD. The man with black coat\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "C",
+    "answer (gt to be compared)": "C. The man with purple coat",
+    "llm answer": "C. The man with purple coat"
+  },
+  {
+    "task_id": "Speaker Identification",
+    "question_prompt": "You are give a video and an audio, please answer the following question:\nDoes the young man with black hair in military uniform speak in the video?\nA. No, he is groaning\nB. Yes, he is talking to the guy with white hair and glasses\nC. Yes, he is talking to the guy in black suit\nD. No, he is just walking at the back\nAnswer with the letter and corresponding option from the given choices directly.",
+    "answer (letter)": "D",
+    "answer (gt to be compared)": "D. No, he is just walking at the back",
+    "llm answer": "D. No, he is just walking at the back"
+  }
+]
