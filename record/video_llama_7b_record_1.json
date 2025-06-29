@@ -3,15 +3,15 @@
     "task_id": "Speaker Identification",
     "question_prompt": "Does the woman with blonde hair speak?\nA. Yes, she is the key speaker\nB. No, she cries\nC. No, she only appears for a short time\nD. Yes, she mumbles a few words\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The best answer is A, Yes, she is the key speaker.",
-    "parsed llm answer": "A",
+    "llm response": "The best answer is: C. No, she only appears for a short time.\nBased on the video you provided, the woman with blonde hair appears on screen for a brief moment, does not speak, and then disappears. Therefore, the correct answer is that she does not speak.",
+    "parsed llm answer": "C",
     "matched": false
   },
   {
     "task_id": "Speaker Identification",
     "question_prompt": "Does the girl with brown hair in light pink shirt and dotted dress speak?\nA. Yes, she speaks only one word\nB. Yes, she speaks\nC. No, she laughs\nD. No, she does not talk to anyone\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "A",
-    "llm response": "The correct answer is B. Yes, she speaks.",
+    "llm response": "The best answer is: B - Yes, she speaks.\nBased on what you have just seen and heard in the video, the girl with brown hair in light pink shirt and dotted dress does speak. She says the word \"yes\" in response to the question asked by her colleague.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -19,39 +19,39 @@
     "task_id": "Speaker Identification",
     "question_prompt": "Does the girl in green dress say anything?\nA. Yes, she talks to the guy in vampire costume\nB. No, she dances at a bar\nC. Yes, she talks to everyone\nD. No, she dances at a party\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The best answer is D. No, she dances at a party.\n\nBased on the video, the girl in green dress does not say anything, she is simply dancing at a party.",
-    "parsed llm answer": "D",
-    "matched": true
+    "llm response": "The best answer is: B. No, she dances at a bar.",
+    "parsed llm answer": "B",
+    "matched": false
   },
   {
     "task_id": "Speaker Identification",
     "question_prompt": "Does the girl in red dress say anything?\nA. No, she does not exist in the video\nB. Yes, she is talking to the man in black suit\nC. Yes, she speaks\nD. No, she is only dancing\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The correct answer is [D] No, she is only dancing. Based on the video, the girl in red dress does not speak or say anything, she is only shown dancing with the man in black suit.",
-    "parsed llm answer": "D",
-    "matched": true
+    "llm response": "The best answer is: C. Yes, she speaks.\nBased on the video footage, the girl in the red dress can be heard speaking to the man in the black suit. She is heard saying something, but the audio is not clear enough to make out the words. Therefore, the correct answer is that she does speak in the video.",
+    "parsed llm answer": "C",
+    "matched": false
   },
   {
     "task_id": "Speaker Identification",
     "question_prompt": "Does the man in yellow shirt speak in the video?\nA. Yes, he is introducing his work.\nB. Yes, he has a short conversation with the man in suit\nC. No, he directly walks away when the lady asks him for a favor\nD. No, he just focuses on his work.\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "B",
-    "llm response": "The best answer is B. Yes, he has a short conversation with the man in suit.",
-    "parsed llm answer": "B",
-    "matched": true
+    "llm response": "The best answer is: C. No, he directly walks away when the lady asks him for a favor.\nIn the video, the man in yellow shirt does not speak or acknowledge the lady's request for a favor. He simply walks away without responding, indicating that he is not interested in the lady's request. Therefore, option C is the best answer.",
+    "parsed llm answer": "C",
+    "matched": false
   },
   {
     "task_id": "Speaker Identification",
     "question_prompt": "Does the thin man with glasses speak?\nA. Yes, he is the presenter\nB. No, he is just sitting and staring at everyone\nC. No, he is laughing\nD. Yes, he is talking to the girl\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "B",
-    "llm response": "The best answer is D Yes, he is talking to the girl.",
-    "parsed llm answer": "D",
-    "matched": false
+    "llm response": "The best answer is: B. No, he is just sitting and staring at everyone.\nBased on the video you provided, the thin man with glasses does not speak. He is simply sitting at his desk and staring at the people in the room. He does not utter a single word throughout the scene. Therefore, the best answer is option B.",
+    "parsed llm answer": "B",
+    "matched": true
   },
   {
     "task_id": "Speaker Identification",
     "question_prompt": "Does the girl speak in the video?\nA. Yes, she speaks a few words\nB. No, the is no girl in the video\nC. Yes, she talks to the old man\nD. No, she does not speak\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The best answer is A, Yes, she speaks a few words.",
+    "llm response": "The best answer is A, Yes, she speaks a few words.\nIn the video, the girl can be heard speaking a few words as she approaches the old man and hands him a piece of paper. She says something in a soft, gentle voice, but the audio is not clear enough to make out what she is saying.",
     "parsed llm answer": "A",
     "matched": false
   },
@@ -59,7 +59,7 @@
     "task_id": "Speaker Identification",
     "question_prompt": "Does the woman in the movie speak?\nA. No, she does not speak to anyone\nB. No, she is doing housework\nC. Yes, she talks to the man\nD. Yes, she is introducing her new product.\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The correct answer is C. Yes, she talks to the man.",
+    "llm response": "The best answer is: C. Yes, she talks to the man.\nIn the video, the woman can be seen talking to a man who enters the room. She greets him and they have a conversation. Therefore, option C is the correct answer.",
     "parsed llm answer": "C",
     "matched": true
   },
@@ -67,31 +67,31 @@
     "task_id": "Speaker Identification",
     "question_prompt": "Does the woman in black uniform speak in the video?\nA. Yes, she answers the questions from the man\nB. No, she is crying all the time.\nC. No, she remains silent all the time\nD. Yes, she asks the old lady questions\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The correct answer is B No, she remains silent all the time.",
-    "parsed llm answer": "B",
-    "matched": false
-  },
-  {
-    "task_id": "Speaker Identification",
-    "question_prompt": "Does the woman in the military jacket speak in the video?\nA. Yes, she exchanges the information with her teammates\nB. Yes, she answers the phone.\nC. No, she does not speak.\nD. No, she was fighting with the enemy\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
-    "answer": "C",
-    "llm response": "The correct answer is C. No, she does not speak.",
+    "llm response": "The best answer is: C. No, she remains silent all the time.\nIn the video, the woman in black uniform does not speak at all. She is seen crying and looking sad throughout the scene, but she does not utter any words. Therefore, the correct answer is option C.",
     "parsed llm answer": "C",
     "matched": true
   },
   {
     "task_id": "Speaker Identification",
+    "question_prompt": "Does the woman in the military jacket speak in the video?\nA. Yes, she exchanges the information with her teammates\nB. Yes, she answers the phone.\nC. No, she does not speak.\nD. No, she was fighting with the enemy\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
+    "answer": "C",
+    "llm response": "The best answer is: B. Yes, she answers the phone.\nBased on the video you provided, the woman in the military jacket is seen answering a phone call. She speaks into the phone and exchanges information with her teammates. Therefore, option B is the correct answer.",
+    "parsed llm answer": "B",
+    "matched": false
+  },
+  {
+    "task_id": "Speaker Identification",
     "question_prompt": "Does the woman speak in the video?\nA. Yes, she is making the action plan\nB. Yes, she questions the police officer\nC. No, she remains silence all the time.\nD. No, she walks away in the middle of the meeting\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "B",
-    "llm response": "The best answer is B. Yes, she questions the police officer.",
-    "parsed llm answer": "B",
-    "matched": true
+    "llm response": "The best answer is: C. No, she remains silent all the time.\nBased on the video, the woman does not speak at any point during the meeting. She remains silent and listens to the police officer's explanation and plan. Therefore, option C is the correct answer.",
+    "parsed llm answer": "C",
+    "matched": false
   },
   {
     "task_id": "Speaker Identification",
     "question_prompt": "Does the girl in white dress speak?\nA. No, she does not talk to anyone\nB. Yes, she talks to the boy with black hair\nC. Yes, she talks to the man with glasses\nD. No, she laughs\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The best answer is B. Yes, she talks to the boy with black hair. Based on the sound, the girl in white dress is speaking to the boy with black hair, and they seem to be having a conversation.",
+    "llm response": "The best answer is: B. Yes, she talks to the boy with black hair.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -99,7 +99,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"Can't you just let him play\"?\nA. The woman with black jacket\nB. The woman with blue dress\nC. The man with white shirt\nD. The woman with grey jacket\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The correct answer is B. The woman with blue dress.",
+    "llm response": "The best answer is [B] The woman with blue dress.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -107,15 +107,15 @@
     "task_id": "Speaker Identification",
     "question_prompt": "Does the man wearing glasses speak in the video?\nA. Yes, he speaks a few words\nB. Yes, he is the interviewer\nC. No, he only laughs\nD. No, he remains quiet all the time.\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The best answer is C. No, he only laughs.",
-    "parsed llm answer": "C",
-    "matched": true
+    "llm response": "The best answer is:\nA. Yes, he speaks a few words\n\nDuring the video, the man wearing glasses can be seen speaking a few words, indicating that he is the speaker or interviewer in the video.",
+    "parsed llm answer": "A",
+    "matched": false
   },
   {
     "task_id": "Speech matching",
     "question_prompt": "Who said \"Nice to meet you, Mr. Goh\"?\nA. The man in white jacket\nB. The woman in yellow dress\nC. The woman in red dress\nD. The man in blue shirt\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The correct answer is B. The woman in yellow dress.",
+    "llm response": "The best answer is [B] The woman in yellow dress.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -123,7 +123,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"it was taken by British soldiers in Benin\"?\nA. The man in black suit\nB. The woman in black suit\nC. The woman in blue shirt\nD. The man with blue jacket\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The best answer is B. The woman in black suit.",
+    "llm response": "The best answer is: B. The woman in black suit.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -131,7 +131,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"But I'm hoping I've got a voicemail from Paul Krieger\"?\nA. The man with blue shirt\nB. The man with black suit\nC. The woman with blue shirt\nD. The woman with brown shirt\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "A",
-    "llm response": "The best answer is B. The man with black suit said \"But I'm hoping I've got a voicemail from Paul Krieger\".",
+    "llm response": "The best answer is: B. The man with black suit.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -139,7 +139,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"It's an honor to be photographed by you\"?\nA. The man with blue suit\nB. The woman with pink dress\nC. The man with black shirt\nD. The woman with blue jacket\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "A",
-    "llm response": "The best answer is B. The woman with pink dress.\n\nBased on the video, the woman with pink dress is the one who said \"It's an honor to be photographed by you\".",
+    "llm response": "The best answer is [B] The woman with pink dress.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -147,15 +147,15 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"No you can't. You definitely can't\"?\nA. The woman wearing yellow shirt\nB. The woman wearing white shirt\nC. The man wearing pink shirt\nD. Then man wearing blue shirt\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The best answer is D. The man wearing blue shirt.",
-    "parsed llm answer": "D",
-    "matched": false
+    "llm response": "The best answer is:\nC. The man wearing pink shirt.\nThe man wearing pink shirt said \"No you can't. You definitely can't\" in response to the student's question.",
+    "parsed llm answer": "C",
+    "matched": true
   },
   {
     "task_id": "Speech matching",
     "question_prompt": "Who said \"I'm proud of you\"?\nA. The man in grey shirt\nB. The woman with black hair\nC. The man with black shirt\nD. The woman with blonde hair\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The best answer is B. The woman with black hair.",
+    "llm response": "The best answer is [B] The woman with black hair.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -163,7 +163,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"I guess she didn't understand we were dating\"?\nA. The man with blue jacket\nB. The girl with blue shirt\nC. The girl with yellow shirt\nD. The boy with white shirt\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The best answer is B. The girl with blue shirt.",
+    "llm response": "The best answer is: B. The girl with blue shirt.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -171,15 +171,15 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"Dude, I lost count 20 cards ago\"?\nA. The woman with red sweater\nB. The woman with blue sweater\nC. The man with blue shirt\nD. The man with dark red jacket\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "A",
-    "llm response": "The correct answer is B. The woman with blue sweater.\n\nThe woman with blue sweater said \"Dude, I lost count 20 cards ago\".",
-    "parsed llm answer": "B",
+    "llm response": "The best answer is [C] The man with dark red jacket.\nAt around 00:15 in the video, the man with dark red jacket can be seen saying \"Dude, I lost count 20 cards ago\".",
+    "parsed llm answer": "C",
     "matched": false
   },
   {
     "task_id": "Speech matching",
     "question_prompt": "Who said \"I'm Audrey, Allison's friend\"?\nA. The girl with dotted blue dress\nB. The boy with white shirt\nC. The woman with floral blouse\nD. The man with blue shirt and black tie\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "A",
-    "llm response": "The correct answer is B. The boy with white shirt.",
+    "llm response": "The best answer is: B. The boy with white shirt.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -187,7 +187,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"How was your conference\"?\nA. The woman with purple shirt\nB. The man with brown jacket\nC. The man with red shirt\nD. The woman with blonde hair\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The best answer is B. The man with brown jacket.\n\nBased on the video, the man with brown jacket was the one who said \"How was your conference?\" while the woman with purple shirt was the one who responded with \"It was good.\"",
+    "llm response": "The best answer is [B] The man with brown jacket.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -195,7 +195,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"I'm glad you and I are friends again, too\"?\nA. The man in black shirt\nB. The man in gray jacket\nC. The woman in blue dress\nD. The woman in purple sweater\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "A",
-    "llm response": "The best answer is B The man in gray jacket. Based on the conversation and the video, it is clear that the man in gray jacket is the one who said \"I'm glad you and I are friends again, too\".",
+    "llm response": "The best answer is:\nB. The man in gray jacket.\nYou can hear him saying \"I'm glad you and I are friends again, too\" in the video.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -203,7 +203,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"I'm listening to God's Plan by Drake\"?\nA. The man with red shirt and grey jacket\nB. The man with green jacket\nC. The man with black headphone\nD. The woman with white shirt\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "Best answer: B The man with green jacket.",
+    "llm response": "The best answer is: B. The man with green jacket.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -211,7 +211,7 @@
     "task_id": "Speaker Identification",
     "question_prompt": "Does the woman with curvy hair and wearing glasses speak?\nA. Yes, she greets the boys and quickly leaves\nB. No, she does not say anything\nC. Yes, she talks to a group of boys\nD. No, she does not appear in the movie\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The correct answer is: C. Yes, she talks to a group of boys.",
+    "llm response": "The best answer is: C. Yes, she talks to a group of boys.\nBased on the video you provided, we see a group of students sitting in a cafeteria, and one of them is a girl with curly hair and wearing glasses. She greets the other boys and begins to talk to them. Therefore, option C is the best answer.",
     "parsed llm answer": "C",
     "matched": true
   },
@@ -219,7 +219,7 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"Do not raise your voice to me sir\"?\nA. The man with grey hair\nB. The woman with black hair\nC. The woman with blond hair\nD. The man with black hair\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The best answer is B. The woman with black hair.",
+    "llm response": "The best answer is [B] The woman with black hair.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -227,31 +227,31 @@
     "task_id": "Speech matching",
     "question_prompt": "Who said \"Sorry. Didn't mean to scare you\"?\nA. The woman with purple shirt\nB. The boy in black suit\nC. The man with white shirt\nD. The woman with colorful dress\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The best answer is C. The man with white shirt.\n\nBased on the video, the man with white shirt is the one who said \"Sorry. Didn't mean to scare you\".",
-    "parsed llm answer": "C",
-    "matched": true
+    "llm response": "The best answer is: B. The boy in black suit.",
+    "parsed llm answer": "B",
+    "matched": false
   },
   {
     "task_id": "Speaker Identification",
     "question_prompt": "Does the man with gray hair in black suit speak?\nA. Yes, he is the interviewer\nB. No, he remains slient\nC. No, he is just looking into the train\nD. Yes, he is explaining things\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The correct answer is D. Yes, he is explaining things.",
-    "parsed llm answer": "D",
-    "matched": true
+    "llm response": "The best answer is A: Yes, he is the interviewer.",
+    "parsed llm answer": "A",
+    "matched": false
   },
   {
     "task_id": "Speech matching",
     "question_prompt": "Who said \"It was an investigation into stock fraud\"?\nA. The man with floral black tie\nB. The man with blue tie\nC. The man with striped black tie\nD. The man with purple tie\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The best answer is B. The man with blue tie.\n\nBased on the video, the speaker is the man with blue tie, and he says \"It was an investigation into stock fraud\".",
-    "parsed llm answer": "B",
-    "matched": false
+    "llm response": "The best answer is [D] The man with purple tie.",
+    "parsed llm answer": "D",
+    "matched": true
   },
   {
     "task_id": "Speech matching",
     "question_prompt": "Who said \"I am not king of all people\"?\nA. The man with green coat\nB. The man with armor\nC. The man with purple coat\nD. The man with black coat\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "C",
-    "llm response": "The best answer is B. The man with armor.\n\nBased on the sound and video, the man with armor is the one who said \"I am not king of all people\".",
+    "llm response": "The best answer is B: The man with armor.",
     "parsed llm answer": "B",
     "matched": false
   },
@@ -259,8 +259,8 @@
     "task_id": "Speaker Identification",
     "question_prompt": "Does the young man with black hair in military uniform speak in the video?\nA. No, he is groaning\nB. Yes, he is talking to the guy with white hair and glasses\nC. Yes, he is talking to the guy in black suit\nD. No, he is just walking at the back\nPlease start your response with one of the following prefixes: ['The best answer is', 'The correct answer is', 'The answer is', 'The answer', 'The best option isThe correct option is', 'Best answer:Best option:', 'Answer:', 'Option:', 'The correct answer', 'The correct option']",
     "answer": "D",
-    "llm response": "The correct answer is B. Yes, he is talking to the guy with white hair and glasses.",
-    "parsed llm answer": "B",
+    "llm response": "The best answer is:\nThe young man with black hair in military uniform does not speak in the video.",
+    "parsed llm answer": "",
     "matched": false
   }
 ]

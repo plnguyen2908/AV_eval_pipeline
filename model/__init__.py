@@ -1,14 +1,41 @@
 from .closed import *
 from .open import *
-import os, tqdm,textwrap, ast
+import os, tqdm, textwrap, ast, re
 from moviepy import VideoFileClip, AudioFileClip, CompositeAudioClip
 import shutil
 
 result = {}
 records = []
 
+answer_prefixes = [
+    "The best answer is",
+    "The correct answer is",
+    "The answer is",
+    "The answer",
+    "The best option is"
+    "The correct option is",
+    "Best answer:"
+    "Best option:",
+    "Answer:",
+    "Option:",
+    "The correct answer",
+    "The correct option",
+]
+
+def extract_characters_regex(s):
+    s = s.strip()
+    for answer_prefix in answer_prefixes:
+        s = s.replace(answer_prefix, "")
+
+    if len(s.split()) > 10 and not re.search("[ABCD]", s):
+        return ""
+    matches = re.search(r'[ABCD]', s)
+    if matches is None:
+        return ""
+    return matches[0]
+
 def process_answer(gt, pred, question):
-    if gt in pred:
+    if gt == pred:
         result[question["task_id"]]["matched"] += 1
         result[question["sub_category"]]["matched"] += 1
         result[question["category"]]["matched"] += 1
@@ -17,6 +44,7 @@ def process_answer(gt, pred, question):
     result[question["sub_category"]]["accuracy"] = round(result[question["sub_category"]]["matched"] / result[question["sub_category"]]["total"] * 100, 2)
     result[question["category"]]["accuracy"] = round(result[question["category"]]["matched"] / result[question["category"]]["total"] * 100, 2)
 
+    return (gt == pred)
 
 def inference(args, dataset):
     temporary_dir = os.path.join(os.getcwd(), "temp")
@@ -73,8 +101,10 @@ def inference(args, dataset):
         choices = ast.literal_eval(question["choices"])
         choices_str = "\n".join(choices)
 
-        question_prompt = f"You are give a video and an audio, please answer the following question:\n{question['question']}\n{choices_str}\nAnswer with the letter and corresponding option from the given choices directly."
+        question_prompt = f"{question['question']}\n{choices_str}\nPlease start your response with one of the following prefixes: {answer_prefixes}"
 
+        # print(question_prompt)
+        # break
         result[question["category"]] = result.get(question["category"], {})
         result[question["category"]]["matched"]= result[question["category"]].get("matched", 0)
         result[question["category"]]["total"] = result[question["category"]].get("total", 0) + 1
@@ -99,16 +129,23 @@ def inference(args, dataset):
                 ans = video_llama_process(chat, new_video_path, question_prompt)
                 # print(ans)
 
-        process_answer(choices[ord(question["answer"]) - ord("A")], ans, question)
         records.append(
             {
                 "task_id": question["task_id"],
                 "question_prompt": question_prompt,
-                "answer (letter)": question["answer"],
-                "answer (gt to be compared)": choices[ord(question["answer"]) - ord("A")],
-                "llm answer": ans
+                "answer": question["answer"],
+                "llm response": ans
             }
         )
+
+        ans = extract_characters_regex(ans)
+
+        records[-1]["parsed llm answer"] = ans
+
+        # process_answer(choices[ord(question["answer"]) - ord("A")], ans, question)
+        matched = process_answer(question["answer"], ans, question)
+
+        records[-1]["matched"] = matched
 
         # os.remove(new_audio_path)
         os.remove(new_video_path)

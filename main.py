@@ -36,17 +36,17 @@ def main():
         case "video_llama_13b":
             print("=" * 5 + "video_llama 13b" + "=" * 5)
             result, records = inference(args, test_loader)
-            with open("result/video_llama_13b.json", "w") as f:
+            with open("result/video_llama_13b_1.json", "w") as f:
                 json.dump(result, f, indent = 2)
-            with open("record/video_llama_13b_record.json", "w") as f:
+            with open("record/video_llama_13b_record_1.json", "w") as f:
                 json.dump(records, f, indent = 2)
 
         case "video_llama_7b":
             print("=" * 5 + "video_llama 7b" + "=" * 5)
             result, records = inference(args, test_loader)
-            with open("result/video_llama_7b.json", "w") as f:
+            with open("result/video_llama_7b_1.json", "w") as f:
                 json.dump(result, f, indent = 2)
-            with open("record/video_llama_7b_record.json", "w") as f:
+            with open("record/video_llama_7b_record_1.json", "w") as f:
                 json.dump(records, f, indent = 2)
 
 if __name__ == "__main__":

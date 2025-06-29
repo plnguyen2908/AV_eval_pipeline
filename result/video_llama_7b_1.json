@@ -1,22 +1,22 @@
 {
   "Perception": {
-    "matched": 25,
+    "matched": 6,
     "total": 33,
-    "accuracy": 75.76
+    "accuracy": 18.18
   },
   "Coarse Perception": {
-    "matched": 25,
+    "matched": 6,
     "total": 33,
-    "accuracy": 75.76
+    "accuracy": 18.18
   },
   "Speaker Identification": {
-    "matched": 12,
+    "matched": 4,
     "total": 16,
-    "accuracy": 75.0
+    "accuracy": 25.0
   },
   "Speech matching": {
-    "matched": 13,
+    "matched": 2,
     "total": 17,
-    "accuracy": 76.47
+    "accuracy": 11.76
   }
 }
