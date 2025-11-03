@@ -8,3 +8,12 @@ temp3
 temp4
 record
 result
+*.mp4
+*.pt
+*.json
+*.jpg
+*.wav
+*.deb
+nextgpt
+LAVIS_XInstructBLIP
+AnyGPT
