@@ -11,58 +11,6 @@ import random
 random.seed(0)
 import json
 
-import re
-
-# Nouns (singular/plural + slang)
-_PERSON_NOUNS = (
-    r"(man|men|woman|women|boy|boys|girl|girls|guy|guys|gal|gals|lady|ladies|"
-    r"gentleman|gentlemen|gent|gents|dude|dudes|chap|chaps|bloke|blokes|"
-    r"fellow|fellows|lad|lads|lass|lasses|child|children|kid|kids|toddler|toddlers|"
-    r"teen|teens|teenager|teenagers|youth|youths|baby|babies|infant|infants)"
-)
-# Descriptors before the noun (old man, teenage-girl, middle aged woman, …)
-_PERSON_DESCR = r"(?:old|elderly|young|little|adult|teen(?:age[dr])?|middle[-\s]?aged)"
-# Whole NP + optional possessive (’s / 's / s')
-NP_RE = re.compile(
-    rf"\b(?P<main>(?:{_PERSON_DESCR}\s*[-\s]?)*{_PERSON_NOUNS})\b(?P<poss>['’]s|s')?",
-    re.IGNORECASE,
-)
-
-# Pronouns: handle longer first via the regex engine’s alternation order
-PRON_RE = re.compile(
-    r"\b(?P<p>herself|himself|hers|his|her|him|she|he)\b(?P<apost>(?:['’]s)?)",
-    re.IGNORECASE,
-)
-
-def to_person(text: str) -> str:
-    """Normalize person-referencing words/phrases to uppercase 'PERSON' (with possessives)."""
-    if not isinstance(text, str):
-        return text
-
-    # 1) Replace noun phrases (desc* + noun [+ possessive])
-    def _np_sub(m: re.Match) -> str:
-        poss = m.group("poss") or ""
-        return f"person{poss}"
-
-    s = NP_RE.sub(_np_sub, text)
-
-    # 2) Replace pronouns; map his/hers -> PERSON’s; he’s/she’s keep ’s
-    def _pron_sub(m: re.Match) -> str:
-        p = m.group("p").lower()
-        apos = m.group("apost") or ""
-        if p in ("his", "hers"):
-            # possessive form even without explicit 's
-            return "person"
-        # he’s/she’s -> PERSON’s (keep the same apostrophe if present)
-        if apos:
-            return f"person{apos}"
-        # he, she, him, her, himself, herself -> PERSON
-        return "person"
-
-    s = PRON_RE.sub(_pron_sub, s)
-    return s
-
-
 result = {}
 records = {}
 
@@ -167,7 +115,7 @@ def inference(args, dataset):
 
     recorded = {}
 
-    if "gemini-2.5-pro" in args.model_name:
+    if "gemini-2.5-pro" in args.model_name or "Qwen3-Omni" in args.model_name:
         if os.path.exists(f"./record/{args.model_name}_record_{args.task_id}_audio_{args.audio}_visual_{args.visual}.json"):
             with open(f"./record/{args.model_name}_record_{args.task_id}_audio_{args.audio}_visual_{args.visual}.json", "r") as f:
                 recorded = json.load(f)
@@ -246,7 +194,7 @@ def inference(args, dataset):
                 break
 
             except Exception as e:
-                print(f"found error: {e}. Retry cutting video")
+                print(f"found error: {e} for {question}. Retry cutting video")
                 time.sleep(5)
                 continue
 
@@ -314,15 +262,19 @@ def inference(args, dataset):
         elif "xblip" in args.model_name:
             ans = xblip_process(model, new_audio_path, new_video_path, question_prompt)
         elif "Qwen2.5" in args.model_name:
-            ans = qwen2_5Omni_process(model, processor, new_video_path, new_audio_path, question_prompt)
+            ans = qwen2_5Omni_process(model, processor, new_combined_path, question_prompt)
         elif "stream-omni" in args.model_name:
             ans = streamomni_process(model, tokenizer, image_processor, cosyvoice, new_audio_path, new_video_path, question_prompt)
         elif "ola" in args.model_name:
             ans = ola_process(model, tokenizer, image_processor, new_video_path, new_audio_path, question_prompt)
         elif "Qwen3" in args.model_name:
-            media_type = "video" if args.visual else ("audio" if args.audio else "both")
-            media_path = new_video_path if args.visual else (new_audio_path if args.audio else new_combined_path)
-            ans = qwen3omni_process(model, processor, media_type, media_path, question_prompt)
+            if id in recorded and recorded[id]["question_prompt"] == question_prompt:
+                print(f"{id} exists")
+                ans = recorded[id]["llm response"]
+            else:
+                media_type = "video" if args.visual else ("audio" if args.audio else "both")
+                media_path = new_video_path if args.visual else (new_audio_path if args.audio else new_combined_path)
+                ans = qwen3omni_process(model, processor, media_type, media_path, question_prompt)
             
         
         records[id] = {
