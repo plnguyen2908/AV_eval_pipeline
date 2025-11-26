@@ -16,4 +16,13 @@ result
 *.deb
 nextgpt
 LAVIS_XInstructBLIP
-AnyGPT
+VITA-1.5
+VITA
+*ckpt*
+tulu-v1-llama2-7b
+stream-omni-8b
+Qwen3-Omni-*
+OneLLM-7B
+*.bin
+*.model
+*.dev
