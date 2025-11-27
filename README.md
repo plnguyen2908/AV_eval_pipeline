@@ -60,7 +60,6 @@ We design each question so that solving it *requires* true audio–visual alignm
 
 
 ## Environment
-- Create an env: `conda env create -f environment.yml` or your own venv.
 - Core deps: `pip install huggingface-hub datasets "moviepy>=2.0"`.
 - Install your model’s extras (e.g., `transformers`, `peft`, etc.).
 - Optional: set `HF_HOME` to control Hugging Face cache (see footer of `main.py`).
@@ -82,10 +81,27 @@ python main.py \
 ```
 
 ## Add Your Model
-1) Place code under `model/open_model/` (see `model/open_model/Qwen3Omni` as a template).  
-2) Export your init/process functions from `model/open_model/__init__.py`.  
+
+### For open models:
+1) Place code under `model/open_model/` (see `model/open_model/Qwen3Omni` as a template). 
+2) Export your init/process functions into `model/open_model/__init__.py`.  
 3) In `model/__init__.py`, add a new `model_init` branch (lines ~82–111) returning `(model, tokenizer, ...)`.  
-4) Extend `model/__init__.py` processing (lines ~228–277) to call your `model_process(model, tokenizer, video, audio, ...)` and return a text answer.  
+4) Extend `model/__init__.py` processing (lines ~228–277) to call your `model_process(model, tokenizer, video, audio, ...)` and return a text answer. Here we have three paths for you to choose: `new_video_path` (video with no audio), `new_audio_path` (audio only), and `new_combined_path` (video with audio).
+5) Register the save logic in `main.py`:
+    ```python
+    elif args.model_name == "your_model":
+        print("=" * 5 + "your model" + "=" * 5)
+        with open("result/your_model.json", "w") as f:
+            json.dump(result, f, indent=2)
+        with open(f"record/your_model_record_{args.task_id}.json", "w") as f:
+            json.dump(records, f, indent=2)
+    ```
+
+### For closed models that can be accessed through API
+1) Place code under `model/closed/` (see `model/closed/gemini/` as a template).  
+2) Export your init/process functions from `model/open_model/__init__.py`.  
+3) In `model/__init__.py`, add a new `model_init` branch (lines ~82–111) returning `client, ...`. 
+4) Extend `model/__init__.py` processing (lines ~228–277) to call your `model_process(client, video, audio, ...)` and return a text answer. Here we have three paths for you to choose: `new_video_path` (video with no audio), `new_audio_path` (audio only), and `new_combined_path` (video with audio).
 5) Register the save logic in `main.py`:
     ```python
     elif args.model_name == "your_model":
@@ -101,9 +117,10 @@ python main.py \
 - Per-question responses: `record/<model>_record_*.json`
 - Temporary clips: `args.temp_dir` (default `./temp`, cleaned per question)
 
+We have put the code for Gemini and Qwen 3-Omni 30B for you to replicate.
+
 ## Citation
 If you use this benchmark or code, please cite:
 ```
-See, Hear, and Understand: Benchmarking Audiovisual Human Speech Understanding in Multimodal Large Language Models
-Le Thien Phuc Nguyen, Zhuoran Yu, Samuel Low Yu Hang, Subin An, Jeongkik Lee, Yohan Ban, SeungEun Chung, Thanh-Huy Nguyen, Juwan Maeng, Soochahn Lee, Yong Jae Lee
+to be filled
 ```

@@ -126,31 +126,6 @@ def inference(args, dataset):
 
         while True:
             try:
-                # uncomment if you use moviepy < 2.0
-                # video = video.subclip(start_secs, end_secs)
-                # video.write_videofile(
-                #     new_video_path, 
-                #     codec="libx264", 
-                #     audio_codec="aac",
-                #     logger = None
-                # )
-                # video.close()
-
-                # audio = AudioFileClip(original_audio_path).subclip(start_secs, end_secs)
-                # audio.write_audiofile(
-                #     new_audio_path,
-                #     logger = None
-                # )
-                # audio.close()
-
-                # composite_audio = CompositeAudioClip([audio])
-                # video_with_audio = video.set_audio(composite_audio)
-                # video_with_audio.write_videofile(
-                #     new_combined_path,
-                #     codec="libx264",       # codec video
-                #     audio_codec="aac",     # codec audio
-                #     fps=video.fps
-                # )
 
                 # uncomment if you use moviepy > 2.0
                 with VideoFileClip(original_video_path) as video:
