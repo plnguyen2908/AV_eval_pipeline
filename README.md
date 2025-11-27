@@ -6,6 +6,10 @@
 
 [Le Thien Phuc Nguyen*](https://plnguyen2908.github.io/), [Zhuoran Yu*](https://www.zhuoranyu.com/), Samuel Low Yu Hang, Subin An, Jeongkik Lee, Yohan Ban, SeungEun Chung, [Thanh-Huy Nguyen](https://www.linkedin.com/in/antares0811/), Juwan Maeng, [Soochahn Lee](https://sites.google.com/view/soochahnlee/), [Yong Jae Lee](https://pages.cs.wisc.edu/~yongjaelee/) (* equal contribution)
 
+<p align="center">
+  <img src="asset/icon.png" alt="AV-SpeakerBench icon" width="140">
+</p>
+
 ---
 
 AV_eval_pipeline evaluates audio-visual QA models on the Holistic AVQA benchmark. It cuts video/audio clips, runs your model, and logs per-question responses plus aggregated accuracy.
