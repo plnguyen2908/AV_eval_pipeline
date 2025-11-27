@@ -12,7 +12,7 @@
 
 ---
 
-TL;DR: AV-SpeakerBench evaluate multimodal large langague models (MLLMs) on speakers conversation understanding audiovisually.
+TL;DR: AV-SpeakerBench evaluates multimodal large langague models (MLLMs) on speakers conversation understanding audiovisually.
 
 ## Contents
 - [Overview](#overview)
