@@ -1,17 +1,7 @@
 <div align="center" style="margin-bottom: 16px;">
-  <table>
-    <tr>
-      <td style="padding-right: 18px; vertical-align: middle;">
-        <img src="asset/icon.jpg" alt="AV-SpeakerBench Icon" width="240">
-      </td>
-      <td style="vertical-align: middle; text-align: left;">
-        <div style="font-size: 42px; font-weight: 800; color: #f28c28; line-height: 1.1;">AV-SpeakerBench</div>
-        <div style="font-size: 28px; font-weight: 700; color: #3b8ec2; line-height: 1.2; margin-top: 8px;">
-          Benchmarking Audiovisual Human Speech Understanding in Multimodal Large Language Models
-        </div>
-      </td>
-    </tr>
-  </table>
+  <h1 style="margin: 0; font-size: 34px; font-weight: 800; line-height: 1.25;">
+    See, Hear, and Understand: Benchmarking Audiovisual Human Speech Understanding in Multimodal Large Language Models
+  </h1>
 </div>
 
 Le Thien Phuc Nguyen, Zhuoran Yu, Samuel Low Yu Hang, Subin An, Jeongkik Lee, Yohan Ban, SeungEun Chung, Thanh-Huy Nguyen, Juwan Maeng, Soochahn Lee, Yong Jae Lee 
