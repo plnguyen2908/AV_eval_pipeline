@@ -202,12 +202,7 @@ def inference(args, dataset):
         choices_str = "\n".join(choices)
 
         question_prompt = f"Select the best answer to the following multiple-choice question based on the video. Respond with only the letter (A, B, C, or D) of the correct option.\n{question['question']}\n{choices_str}\nThe best answer is:"
-        # question_prompt = f"Select the best answer to the following multiple-choice question based on the video. Respond with only the letter (A, B, C, D, or E) of the correct option.\n{question['question']}\n{choices_str}\nThe best answer is:"
-        # question_prompt = f"Select the best answer to the following multiple-choice question based on the video. Please provide your answer with detailed reason.\n{question['question']}\n{choices_str}\nThe best answer is:"
-        # question_prompt = f"{question['question']}\n{choices_str}\nPlease start your response with 'The best answer is' with the corresponding anwer choice's letter."
-        # question_prompt = f"Select the best answer to the following multiple-choice question based on the video. Please provide your answer with detailed reason.\n{to_person(question['question'])}\n{choices_str}\nThe best answer is:"
-        print(question_prompt)
-
+    
         # break
         result[f'level 1: {question["category"]}'] = result.get(f'level 1: {question["category"]}', {})
         result[f'level 1: {question["category"]}']["matched"]= result[f'level 1: {question["category"]}'].get("matched", 0)
