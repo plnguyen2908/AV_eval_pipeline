@@ -12,6 +12,7 @@ result
 *.pt
 *.json
 *.jpg
+!asset/*.jpg
 *.wav
 *.deb
 nextgpt

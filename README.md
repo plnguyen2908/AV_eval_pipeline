@@ -1,7 +1,13 @@
-<h1 align="center">
-  <img src="asset/icon.jpg" alt="See, Hear, and Understand Benchmark Icon" width="140" style="vertical-align: middle; margin-right: 12px;">
-  See, Hear, and Understand: Benchmarking Audiovisual Human Speech Understanding in Multimodal Large Language Models
-</h1>
+<table>
+  <tr>
+    <td style="width: 220px; vertical-align: middle;">
+      <img src="asset/icon.jpg" alt="See, Hear, and Understand Benchmark Icon" width="200">
+    </td>
+    <td style="vertical-align: middle;">
+      <h1>See, Hear, and Understand: Benchmarking Audiovisual Human Speech Understanding in Multimodal Large Language Models</h1>
+    </td>
+  </tr>
+</table>
 
 Le Thien Phuc Nguyen, Zhuoran Yu, Samuel Low Yu Hang, Subin An, Jeongkik Lee, Yohan Ban, SeungEun Chung, Thanh-Huy Nguyen, Juwan Maeng, Soochahn Lee, Yong Jae Lee 
 
