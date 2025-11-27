@@ -12,15 +12,22 @@
 
 ---
 
-AV_eval_pipeline evaluates audio-visual QA models on the Holistic AVQA benchmark. It cuts video/audio clips, runs your model, and logs per-question responses plus aggregated accuracy.
+TL;DR: AV-SpeakerBench evaluate multimodal large langague models (MLLMs) on speakers conversation understanding audiovisually.
 
 ## Contents
+- [Overview](#overview)
 - [Environment](#environment)
 - [Data](#data)
 - [Quick Eval](#quick-eval)
 - [Add Your Model](#add-your-model)
 - [Outputs](#outputs)
 - [Citation](#citation)
+
+## Overview
+
+Multimodal large language models (MLLMs) are expected to jointly interpret vision, audio, and language, yet existing video benchmarks rarely assess fine-grained reasoning about human speech. Many tasks remain visually solvable or only coarsely evaluate speech, offering limited insight into whether models can align who speaks, what is said, and when it occurs. We introduce AV-SpeakerBench, a curated benchmark of 3,212 multiple-choice questions focused on speaker-centric audiovisual reasoning in real-world videos. It features: (1) a speaker-centered formulation that treats speakers—not scenes—as the core reasoning unit; (2) fusion-grounded question design embedding audiovisual dependencies into question semantics; and (3) expert-curated annotations ensuring temporal precision and cross-modal validity. Comprehensive evaluations show that the Gemini family consistently outperforms open-source systems, with Gemini 2.5 Pro achieving the best results. Among open models, Qwen3-Omni-30B approaches Gemini 2.0 Flash but remains far behind Gemini 2.5 Pro, primarily due to weaker audiovisual fusion rather than visual perception. We believe AV-SpeakerBench establishes a rigorous foundation for advancing fine-grained audiovisual reasoning in future multimodal systems.
+
+
 
 ## Environment
 - Create an env: `conda env create -f environment.yml` or your own venv.
