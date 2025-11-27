@@ -82,7 +82,7 @@ python main.py \
 
 ## Add Your Model
 
-### For open models:
+### For open models
 1) Place code under `model/open_model/` (see `model/open_model/Qwen3Omni` as a template). 
 2) Export your init/process functions into `model/open_model/__init__.py`.  
 3) In `model/__init__.py`, add a new `model_init` branch (lines ~82–111) returning `(model, tokenizer, ...)`.  
