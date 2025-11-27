@@ -30,17 +30,34 @@ Multimodal large language models (MLLMs) are expected to jointly interpret visio
 
 
 <p align="center" style="width: 100%;">
-  <img src="asset/data_stat.png" alt="AV-SpeakerBench dataset statistics" style="display: block; width: 100%; height: auto; max-width: 100%;">
+  <img src="asset/dataset_stat.png" alt="AV-SpeakerBench dataset statistics" style="display: block; width: 100%; height: auto; max-width: 100%;">
 </p>
 
-**Dataset Statistics:**
 
-- **Clip length** – Videos are short, natural clips (mostly under ~25 seconds), giving dense supervision while keeping temporal context manageable for training and evaluation.
+- **Clip length** – Videos are short, natural clips (mostly under ~25 seconds), since most of the open models only sample 8-10 frames.
 
-- **Task coverage** – Each clip is annotated with questions spanning 11 audio-visual perception tasks (e.g., speaker detection/recognition/counting, speech duration/rate/intensity/pitch, activity and attitude recognition, audiovisual counting, speech recognition), with a roughly balanced number of questions per task.
+- **Task coverage** – Each clip is annotated with questions spanning 11 audio-visual perception tasks (e.g., speaker detection/recognition/counting, speech duration/rate/intensity/pitch, activity, attribute recognition, visual counting, and speech recognition).
 
 - **Speaker diversity** – Scenes cover a wide range of interaction settings: ~25.8% of videos have ≤2 speakers, 24.6% have 3, 18.1% have 4, and 31.5% contain ≥5 speakers, encouraging robust performance in crowded, multi-speaker scenarios.
 
+<p align="center" style="width: 100%;">
+  <img src="asset/question_design.png" alt="AV-SpeakerBench question design" style="display: block; width: 100%; height: auto; max-width: 100%;">
+</p>
+
+
+**Cross-modal anchor question design (key novelty).**  
+We design each question so that solving it *requires* true audio–visual alignment via an explicit anchor–target structure.
+
+- **Audio-centric tasks → visual anchor.**  
+  Example: *“After the man in the grey shirt wiggles his fingers, until the end of the video, how many times is `red line` mentioned by all speakers?”*  
+  Here, the model must first **use the visual anchor** (“the man in the grey shirt wiggles his fingers”) to find the correct time span, and then **listen** within that window to count how many times the phrase “red line” is spoken.
+
+- **Visual-centric tasks → audio anchor.**  
+  Example: *“After the woman in a black jacket says, `This is very datable,` until the end of the video, how many unique people are visible, even partially?”*  
+  In this case, the model must first **use the audio anchor** (the quoted utterance) to locate the right moment in the audio stream, and then **inspect the video** to count distinct visible people.
+
+- **Speaker-centric tasks → mixed anchors and answer cues.**  
+  For speaker reasoning (e.g., “Among the people who speak, who speaks the most quietly overall?”), questions may use either **visual or audio anchors**, while answer choices differ in the **opposite modality** (e.g., visually distinct people who share the scene or people who say different lines). This mixed design forces the model to jointly track *who*, *when*, and *where* across modalities, making unimodal shortcuts much harder.
 
 
 ## Environment
