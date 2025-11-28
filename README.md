@@ -117,7 +117,7 @@ python main.py \
 - Per-question responses: `record/<model>_record_*.json`
 - Temporary clips: `args.temp_dir` (default `./temp`, cleaned per question)
 
-We have put the code for Gemini and Qwen 3-Omni 30B for you to replicate.
+We have put the code for Gemini and Qwen 3-Omni 30B for you to replicate. For Gemini, please create an .env file and put the API key there. For Qwen 3-Omni 30B, please download the weight into the corresponding folder.
 
 ## Citation
 If you use this benchmark or code, please cite:
