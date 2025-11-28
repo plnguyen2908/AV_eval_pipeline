@@ -10,7 +10,6 @@ import sys
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_path", type=str, help = "path to the data")
     parser.add_argument("--model_name", type = str, required = True, help = "model name to be tested")
     parser.add_argument("--cfg_path", default='eval_configs/video_llama_eval_withaudio.yaml', help="path to configuration file.")
     parser.add_argument(
@@ -29,6 +28,7 @@ def main():
     parser.add_argument("--audio", dest="audio", action='store_true')
     parser.add_argument("--visual", dest="visual", action='store_true')
     parser.add_argument("--temp_dir", type=str, default = "temp")
+    parser.add_argument("--data_path", type=str, default = "/data/plnguyen2908/AV_eval_pipeline/data", help = "original path to downloaded data")
     args = parser.parse_args()
     test_loader = get_dataset(category = args.category, sub_category=args.sub_category, task_id = args.task_id, )
 

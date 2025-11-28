@@ -121,63 +121,15 @@ def inference(args, dataset):
                 recorded = json.load(f)
 
     for idx, question in tqdm.tqdm(enumerate(dataset), total = len(dataset)):
-        original_video_path = os.path.join(args.data_path, question["video_path"])
-        original_audio_path = os.path.join(args.data_path, question["audio_path"])
-
-        while True:
-            try:
-
-                # uncomment if you use moviepy > 2.0
-                with VideoFileClip(original_video_path) as video:
-                    max_duration = video.duration
-                    mm, ss = map(int, question["start_time"].split(":"))
-                    start_secs = mm * 60 + ss
-                    mm, ss = map(int, question["end_time"].split(":"))
-                    end_secs = min(mm * 60 + ss, max_duration)
-
-                    if start_secs > end_secs:
-                        print(question)
-                    
-                    new_video_path = os.path.join(temporary_dir, f"video_{start_secs}-{end_secs}.mp4")
-                    new_audio_path = os.path.join(temporary_dir, f"audio_{start_secs}-{end_secs}.wav")
-                    new_combined_path = os.path.join(temporary_dir, f"video_audio_{start_secs}-{end_secs}.mp4")
-
-                    video_sub = video.subclipped(start_secs, end_secs)
-                    video_sub.write_videofile(
-                        new_video_path, 
-                        codec="libx264", 
-                        audio=False,
-                        logger = None
-                    )
-
-                    with AudioFileClip(original_audio_path) as audio:
-
-                        audio_sub = audio.subclipped(start_secs, end_secs)
-                        audio_sub.write_audiofile(
-                            new_audio_path,
-                            logger = None
-                        )
-
-                        composite_audio = CompositeAudioClip([audio_sub])
-                        video_with_audio = video_sub.with_audio(composite_audio)
-                        video_with_audio.write_videofile(
-                            new_combined_path,
-                            codec="libx264",       # codec video
-                            audio_codec="aac",     # codec audio
-                            fps=video.fps
-                        )
-                break
-
-            except Exception as e:
-                print(f"found error: {e} for {question}. Retry cutting video")
-                time.sleep(5)
-                continue
+        new_video_path = os.path.join(args.data_path, question["visual_path"])
+        new_audio_path = os.path.join(args.data_path, question["audio_path"])
+        new_combined_path = os.path.join(args.data_path, question["audio_visual_path"])
 
         choices = ast.literal_eval(question["choices"])
         choices_str = "\n".join(choices)
 
         question_prompt = f"Select the best answer to the following multiple-choice question based on the video. Respond with only the letter (A, B, C, or D) of the correct option.\n{question['question']}\n{choices_str}\nThe best answer is:"
-    
+
         # break
         result[f'level 1: {question["category"]}'] = result.get(f'level 1: {question["category"]}', {})
         result[f'level 1: {question["category"]}']["matched"]= result[f'level 1: {question["category"]}'].get("matched", 0)
@@ -273,10 +225,6 @@ def inference(args, dataset):
         matched = process_answer(question["answer"], ans, question)
 
         records[id]["matched"] = matched
-
-        os.remove(new_audio_path)
-        os.remove(new_video_path)
-        os.remove(new_combined_path)
     
     print(result)
     return result, records

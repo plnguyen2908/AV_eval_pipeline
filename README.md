@@ -16,7 +16,7 @@ TL;DR: AV-SpeakerBench evaluates multimodal large langague models (MLLMs) on spe
 
 ## Contents
 - [Overview](#overview)
-- [Environment](#environment)
+- [Environment Setup](#environment-setup)
 - [Data](#data)
 - [Quick Eval](#quick-eval)
 - [Add Your Model](#add-your-model)
@@ -59,7 +59,7 @@ We design each question so that solving it *requires* true audio–visual alignm
   For speaker reasoning (e.g., “Among the people who speak, who speaks the most quietly overall?”), questions may use either **visual or audio anchors**, while answer choices differ in the **opposite modality** (e.g., visually distinct people who share the scene or people who say different lines). This mixed design forces the model to jointly track *who*, *when*, and *where* across modalities, making unimodal shortcuts much harder.
 
 
-## Environment
+## Environment Setup
 - Core deps: `pip install huggingface-hub datasets "moviepy>=2.0"`.
 - Install your model’s extras (e.g., `transformers`, `peft`, etc.).
 - Optional: set `HF_HOME` to control Hugging Face cache (see footer of `main.py`).
