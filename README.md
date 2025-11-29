@@ -9,6 +9,12 @@
 <p align="center" style="width: 100%;">
   <img src="asset/icon.png" alt="AV-SpeakerBench icon" style="display: block; width: 100%; height: auto; max-width: 100%;">
 </p>
+<p align="center">
+  <a href="https://plnguyen2908.github.io/AV-SpeakerBench-project-page/"><span aria-hidden="true">&#127760;</span> Project Page</a> |
+  <a href="https://arxiv.org/"><span aria-hidden="true">&#128214;</span> ArXiv</a> |
+  <a href="https://huggingface.co/datasets/plnguyen2908/AV-SpeakerBench"><span aria-hidden="true">&#129303;</span> Dataset</a> |
+  <a href="https://plnguyen2908.github.io/AV-SpeakerBench-project-page/#leaderboard"><span aria-hidden="true">&#127942;</span> Leaderboard</a>
+</p>
 
 ---
 
