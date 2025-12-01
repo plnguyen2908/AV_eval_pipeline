@@ -50,7 +50,7 @@ AV-SpeakerBench is a curated benchmark of 3,212 multiple-choice questions that t
 </p>
 
 
-**Cross-modal anchor question design (key novelty).**  
+**Cross-modal question design (key novelty).**  
 We design each question so that solving it *requires* true audio–visual alignment via an explicit anchor–target structure.
 
 - **Audio-centric tasks → visual anchor.**  
