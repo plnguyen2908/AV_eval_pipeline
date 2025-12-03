@@ -11,7 +11,7 @@
 </p>
 <p align="center">
   <a href="https://plnguyen2908.github.io/AV-SpeakerBench-project-page/"><span aria-hidden="true">&#127760;</span> Project Page</a> |
-  <a href="https://arxiv.org/"><span aria-hidden="true">&#128214;</span> ArXiv</a> |
+  <a href="https://arxiv.org/abs/2512.02231"><span aria-hidden="true">&#128214;</span> ArXiv</a> |
   <a href="https://huggingface.co/datasets/plnguyen2908/AV-SpeakerBench"><span aria-hidden="true">&#129303;</span> Dataset</a> |
   <a href="https://plnguyen2908.github.io/AV-SpeakerBench-project-page/#leaderboard"><span aria-hidden="true">&#127942;</span> Leaderboard</a>
 </p>
@@ -128,7 +128,15 @@ We have put the code for Gemini and Qwen 3-Omni 30B for you to replicate. For Ge
 ## Citation
 If you use this benchmark or code, please cite:
 ```
-to be filled
+@misc{nguyen2025seehearunderstandbenchmarking,
+      title={See, Hear, and Understand: Benchmarking Audiovisual Human Speech Understanding in Multimodal Large Language Models}, 
+      author={Le Thien Phuc Nguyen and Zhuoran Yu and Samuel Low Yu Hang and Subin An and Jeongik Lee and Yohan Ban and SeungEun Chung and Thanh-Huy Nguyen and JuWan Maeng and Soochahn Lee and Yong Jae Lee},
+      year={2025},
+      eprint={2512.02231},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.02231}, 
+}
 ```
 
 ## License
