@@ -70,13 +70,19 @@ We design each question so that solving it *requires* true audio–visual alignm
 - Install your model’s extras (e.g., `transformers`, `peft`, etc.).
 - Optional: set `HF_HOME` to control Hugging Face cache (see footer of `main.py`).
 
+## Data
+- Update `local_dir` in `download_data.py` if needed.
+- Download: `python download_data.py`.
+- Use the downloaded root as `--data_path` for evaluation.
+
+
 ## Dataset reading
 ```
 from datasets import load_dataset
 from pathlib import Path
 import tqdm
 
-root = Path(".")  # Holistic_AVQA_bench
+root = Path("/path/to/dataset") 
 ds = load_dataset("plnguyen2908/AV-SpeakerBench", split="test")
 
 for idx, row in tqdm.tqdm(enumerate(ds), total=len(ds)):
@@ -91,10 +97,6 @@ for idx, row in tqdm.tqdm(enumerate(ds), total=len(ds)):
     prompt = f"Select the best answer to the following multiple-choice question based on the video. Respond with only the letter (A, B C, or D) of the correct option.\n{row['question']}\n{choices_str}\nThe best answer is:"
 
 ```
-## Data
-- Update `local_dir` in `download_data.py` if needed.
-- Download: `python download_data.py`.
-- Use the downloaded root as `--data_path` for evaluation.
 
 ## Quick Eval
 ```bash
